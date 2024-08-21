@@ -1,0 +1,14 @@
+schema {
+    query: Query
+}
+
+type Contract {
+    code: String
+    methods: [String]
+    vars: [String]
+
+}
+
+type Query {
+    contract: Contract
+}
