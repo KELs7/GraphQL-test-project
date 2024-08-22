@@ -3,6 +3,7 @@ schema {
 }
 
 type Contract {
+    contractName: String
     code: String
     methods: [String]
     vars: [String]
@@ -10,5 +11,5 @@ type Contract {
 }
 
 type Query {
-    contract: Contract
+    contract(name: String!): Contract
 }
